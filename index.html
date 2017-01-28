@@ -2,13 +2,19 @@
 <body>
 
 <div id="qart"></div>
+<div id="qart2"></div>
 <script src="https://rawgit.com/kciter/qart.js/master/dist/qart.js"></script>
 <script>
+    new QArt({
+        value: 'http://codeforsanfrancisco.org/',
+        imagePath: './codeforsanfrancisco-square.png',
+        filter: 'color'
+    }).make(document.getElementById('qart'));
     new QArt({
         value: 'http://brigadehub.github.io/',
         imagePath: './logo-square-white-blue.png',
         filter: 'color'
-    }).make(document.getElementById('qart'));
+    }).make(document.getElementById('qart2'));
 </script>
 </body>
 </html>
